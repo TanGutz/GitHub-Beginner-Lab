@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 94);
+            label1.Location = new Point(12, 61);
             label1.Name = "label1";
             label1.Size = new Size(498, 40);
             label1.TabIndex = 0;
             label1.Text = "Student Profile - GitHub Beginner Lab";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 120);
+            label2.Name = "label2";
+            label2.Size = new Size(459, 45);
+            label2.TabIndex = 1;
+            label2.Text = "Contact Number: 09614022390";
             // 
             // StudentProfile
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(526, 235);
+            Controls.Add(label2);
             Controls.Add(label1);
             Name = "StudentProfile";
             Text = "StudentProfile";
@@ -56,5 +68,6 @@
         #endregion
 
         private Label label1;
+        private Label label2;
     }
 }
